@@ -309,7 +309,56 @@ tbody tr:hover td { background:#fbfcfe; }
             Usa <strong>3 = alto</strong>, <strong>2 = medio</strong> y
             <strong>1 = bajo</strong>.
           </div>
-
+[
+  {
+    "id": "H-01",
+    "fase_dt_origen": "Testear",
+    "causa_supuesto_central": "Si promovemos un acceso responsable y controlado a las plataformas de apuestas deportivas, entonces se reducira el juego problematico entre los jovenes del grupo focal estudiado.",
+    "insight_empatia": "En el grupo focal, los jovenes que reportan usar mas herramientas de control de la plataforma (limites de deposito, limites de tiempo, cierre automatico de sesion) tienden a mostrar menor severidad de sintomas de juego problematico.",
+    "metrica_clave": "Asociacion acceso-severidad = corr(controlled_access_level_score, problem_gambling_severity_index)",
+    "impacto": "Alto",
+    "esfuerzo": "Bajo",
+    "patron_esperado_confirma": "r <= -0.3 (asociacion negativa moderada o fuerte)",
+    "condicion_refutacion": "r >= -0.1 (sin asociacion relevante)",
+    "accion_si_confirma": "Fortalecer y priorizar las herramientas de control de acceso como estrategia central de intervencion.",
+    "accion_si_refuta": "Explorar otros mecanismos (educacion, publicidad responsable) ademas de solo controles de acceso.",
+    "valor_esperado_usuario": "Mayor sensacion de control sobre su comportamiento de apuesta y menor riesgo de desarrollar juego problematico, dentro del grupo focal estudiado.",
+    "estado": "Amarillo",
+    "mad_valor_numerico": -0.53
+  },
+  {
+    "id": "H-02",
+    "fase_dt_origen": "Empatizar",
+    "causa_supuesto_central": "Si fomentamos publicidad responsable sobre apuestas deportivas, entonces se reducira la normalizacion y el juego problematico entre los jovenes del grupo focal estudiado.",
+    "insight_empatia": "No aplica todavia - el instrumento actual no incluyo preguntas sobre exposicion a publicidad de apuestas.",
+    "metrica_clave": "% de jovenes expuestos a publicidad responsable con reduccion en el indice de juego problematico",
+    "impacto": "Alto",
+    "esfuerzo": "Alto",
+    "patron_esperado_confirma": ">= 50% de los jovenes expuestos a publicidad responsable muestran reduccion en su indice de juego problematico",
+    "condicion_refutacion": "< 20% de los jovenes expuestos a publicidad responsable muestran reduccion en su indice de juego problematico",
+    "accion_si_confirma": "Recomendar a las plataformas o entes reguladores incluir mensajes de riesgo/juego responsable en su publicidad, como medida de prevencion dirigida a jovenes.",
+    "accion_si_refuta": "Descartar la publicidad responsable como palanca principal y enfocar recursos en otras estrategias (ej. controles de acceso, educacion directa).",
+    "valor_esperado_usuario": "Pendiente - se definira una vez se recolecte el dato.",
+    "estado": "Rojo",
+    "mad_valor_numerico": null
+  },
+  {
+    "id": "H-03",
+    "fase_dt_origen": "Testear",
+    "causa_supuesto_central": "Si un joven que apuesta en plataformas deportivas tiene mayor conciencia y autopercepcion de su propia capacidad para dejar de apostar cuando lo desea, entonces presentara menor severidad de juego problematico asociado a las apuestas deportivas.",
+    "insight_empatia": "En el grupo focal, quienes reportan mayor capacidad de autocontrol percibida muestran menor severidad de sintomas de juego problematico. (Nota: reformulacion de la hipotesis original sobre 'conciencia de riesgo y normalizacion', que no se pudo medir por no existir esas preguntas en el instrumento.)",
+    "metrica_clave": "corr(capacidad_autocontrol_percibida, problem_gambling_severity_index)",
+    "impacto": "Medio",
+    "esfuerzo": "Bajo",
+    "patron_esperado_confirma": "r <= -0.3 (asociacion negativa moderada o fuerte)",
+    "condicion_refutacion": "r >= -0.1 (sin asociacion relevante)",
+    "accion_si_confirma": "Incluir el autocontrol percibido como indicador temprano en futuras intervenciones con este grupo.",
+    "accion_si_refuta": "Descartar el autocontrol percibido como proxy util de conciencia de riesgo.",
+    "valor_esperado_usuario": "Indicador facil de medir para detectar riesgo temprano dentro del grupo focal.",
+    "estado": "Amarillo",
+    "mad_valor_numerico": -0.77
+  }
+]
           <div class="guide-item">
             <strong>3. Esfuerzo:</strong>
             Estima cuánto tiempo necesitas para obtener datos fiables:
